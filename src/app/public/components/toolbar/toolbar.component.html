@@ -1,0 +1,21 @@
+<mat-toolbar color="primary" role="navigation" aria-label="Main toolbar">
+  <div class="toolbar-left">
+    <img
+      src="https://logo.clearbit.com/eventify.io"
+      alt="Eventify logo"
+      width="40"
+      height="40"
+      aria-hidden="true"
+    />
+    <span class="cert-text">ISO 27001:2022 certified</span>
+  </div>
+
+  <div class="toolbar-center">
+    <button mat-button [routerLink]="options[0].path" aria-label="Go to Home page">Home</button>
+    <button mat-button [routerLink]="options[1].path" aria-label="Go to Rating page">Rating</button>
+  </div>
+
+  <div class="toolbar-right">
+    <app-language-switcher/>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,32 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dbe3ff;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cert-text {
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+  user-select: none;
+}
+
+.toolbar-center {
+  display: flex;
+  gap: 16px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

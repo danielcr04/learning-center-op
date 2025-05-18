@@ -1,0 +1,21 @@
+<mat-card aria-label="Event summary card">
+  <mat-card-header>
+    <h3>{{ event.name }}</h3>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p>{{ event.description }}</p>
+  </mat-card-content>
+
+  <mat-card-footer>
+    <div>
+      <strong>Checked-In Attendees:</strong> {{ checkedInCount }}
+    </div>
+    <div>
+      <strong>Average Rating:</strong>
+      <span>
+        {{ averageRating !== null ? averageRating : 'No ratings' }}
+      </span>
+    </div>
+  </mat-card-footer>
+</mat-card>

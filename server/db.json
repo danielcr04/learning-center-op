@@ -1,0 +1,71 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": "Music Festival 2023",
+      "description": "A grand music festival with top artists.",
+      "scheduledAt": "2023-07-10T18:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Tech Conference 2023",
+      "description": "A conference for the latest in technology and innovation.",
+      "scheduledAt": "2023-08-15T09:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Food and Wine Expo",
+      "description": "A wonderful event for food and wine enthusiasts.",
+      "scheduledAt": "2023-09-05T12:00:00Z"
+    }
+  ],
+  "attendees": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "eventId": 1,
+      "ticketIdentifier": "TICKET1234",
+      "checkedInAt": ""
+    },
+    {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "eventId": 2,
+      "ticketIdentifier": "TICKET5678",
+      "checkedInAt": "2023-08-15T08:45:00Z"
+    },
+    {
+      "id": 3,
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "eventId": 1,
+      "ticketIdentifier": "TICKET9101",
+      "checkedInAt": "2023-07-10T18:10:00Z"
+    }
+  ],
+  "ratings": [
+    {
+      "id": 1,
+      "attendeeId": 2,
+      "eventId": 2,
+      "rating": 5,
+      "ratedAt": "2023-08-15T09:30:00Z"
+    },
+    {
+      "id": 2,
+      "attendeeId": 3,
+      "eventId": 2,
+      "rating": 4.5,
+      "ratedAt": "2023-08-15T09:30:00Z"
+    },
+    {
+      "attendeeId": 3,
+      "eventId": 1,
+      "rating": 3,
+      "ratedAt": "2025-05-18T06:42:04.484Z",
+      "id": 3
+    }
+  ]
+}

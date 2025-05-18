@@ -1,0 +1,15 @@
+<h2>Registered Events</h2>
+
+@if (events.length === 0){
+  <div>No events available.</div>
+} @else {
+  <mat-grid-list cols="2" rowHeight="350px" gutterSize="16px">
+    @for  (event of events; track event){
+    <mat-grid-tile>
+      <app-event-summary [event]="event"/>
+    </mat-grid-tile>
+    }
+  </mat-grid-list>
+}
+
+

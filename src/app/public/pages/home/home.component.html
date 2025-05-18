@@ -1,0 +1,9 @@
+<app-toolbar/>
+<h1>Home</h1>
+<p>Welcome to Eventify</p>
+@if (!errorMessage){
+  <app-registered-events [events]="events"/>
+} @else {
+  <div class="error">{{ errorMessage }}</div>
+}
+
