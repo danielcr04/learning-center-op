@@ -1,59 +1,98 @@
-# PracticaEp2
+cd Documents
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+sudo chown -R alumnos:staff ~/Documents
+sudo chown -R alumnos:staff ~/Documents/(archivo-pc....)
+sudo chown alumnos ~/.zshrc
+chmod u+rw ~/.zshrc
+sudo chown alumnos ~/.angular-config.json
 
-## Development server
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
 
-## Building
 
-To build the project run:
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
 
-```bash
-ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+//Crear proyecto
+sudo npx --yes --package @angular/cli@latest ng new (upc2501si729eaucode-lo que pida) --defaults --standalone=true
 
-## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+//Instalar angular material
+sudo ng add @angular/material
+
+
+//Configurar FakeAPI con json-server
+sudo npm i -g json-server@0.17.4
+
+
+//Create server/db.json
+{ "atributo":[], etc }
+
+//Create server/routes.json
+{ "/api/v1/*": "/$1" }
+
+//Insert in server/start.sh
+json-server --watch db.json --routes routes.json
+
+//Insert in server/start.bat
+json-server --watch db.json --routes routes.json
+
+//Crear entornos
+sudo ng g environments
+
+//Configurar i18n
+sudo npm i @ngx-translate/core @ngx-translate/http-loader
+
+//crear carpeta public/assets/i18n
+
+//Para crear carpetas
+//Component
+ng g c public/components/(Archivo)
+
+//service
+ng g s shared/services/(Base)
+
+//model
+ng g class learning/model/Course --type=entity
+
+//pages
+ng g
+
+
+1. Crear los de shared
+   components/BaseForm
+   services/BaseApi
+
+2. Crear los de public
+   Components(languageSwitcher y toolbar)
+   Pages(Home y pagenotfound)
+
+3. Crear Registration(bounded que no sea de ingresar datos, solo mostrar)
+   Model(Event y Attendee)
+   Services(EventService y AteendeeService)
+   Components(EventSummary y RegisteredEvents)
+
+//Crear un base form para componentes que van a ingresar/editar datos
+ng g c shared/components/BaseForm --inline-template --inline-style --flat
+
+4.Crear bounded de crear algo
+
+
+//copiar app.html
+//copiar app.component.ts
+//copiar app.config
+//copiar app.routes
+
+
